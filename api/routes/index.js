@@ -28,7 +28,7 @@ Routes.init = (app) => {
   app.use("*", (req, res, next) => {
     return res.status(404).json({
       status: 404,
-      error: "NOT FOUND",
+      error: "USER NOT FOUND",
     });
   });
 };
